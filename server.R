@@ -81,6 +81,7 @@ shinyServer(function(input, output) {
   PredN2 <- rbind(PredN2, Pred1N2, Pred2N2, Pred3N2, Pred4N2)
   PredN2 <- mutate(PredN2, WtFreq = Frequency/sum(PredN2$Frequency))
 
+  FtN1 <- read.csv("FtN1.csv")
   #PredN6Wrd <- select(PredN6, txt6, WtFreq )
   #colnames(PredN6Wrd) <- c("Wrd", "WtFreq")
   #PredN5Wrd <- select(PredN5, txt5, WtFreq )
